@@ -1,0 +1,23 @@
+@import "_colors.scss";
+
+@mixin ButtonClassic{
+    color: white;
+    background-color: $ButtonClassic;
+    display: block;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.7s;
+}
+@mixin ButtonClassicHover{
+    color: $ButtonClassic;
+    background-color: white;
+    transition: all 0.7s;
+}
