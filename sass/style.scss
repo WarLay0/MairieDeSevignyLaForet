@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 html{
-    //overflow-x: hidden;
+    overflow-x: hidden;
     font-family: "Josefin Sans", sans-serif;
 
     scroll-behavior: smooth;
@@ -102,12 +102,11 @@ header{
         }
     }
     #HomeComingSeparator{
-        width: 100vw;
         height: 100vh;
         img{
             position: absolute;
-            left: 0px;
-            bottom: 0px;
+            left: 0;
+            bottom: 0;
             width: 100vw;
             height: 65vh;
         }
