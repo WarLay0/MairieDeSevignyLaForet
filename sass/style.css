@@ -5,7 +5,146 @@
   box-sizing: border-box;
 }
 
-#HomeGallery .ButtonClassic {
+html {
+  overflow-x: hidden;
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/img/header/HeroImage.png");
+  background-size: cover;
+  background-position: left;
+}
+header #HomeHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  margin: 90px;
+  top: calc(50% - 128px);
+  transform: translateY(-50%);
+}
+header #HomeHeader h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 96px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header #HomeHeader img {
+  width: 643px;
+  height: 242px;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  display: block;
+  width: 157px;
+  height: 128px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 128px;
+  font-size: 24px;
+}
+header nav ul li:hover a {
+  text-decoration: underline;
+}
+header #HomeComingEvent {
+  width: 388px;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  z-index: 1;
+}
+header #HomeComingEvent h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 20px 0px 20px 0;
+}
+header #HomeComingEvent #ComingEvent h3 {
+  padding: 15px 0px 15px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+header #HomeComingEvent #ComingEvent p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+header #HomeComingEvent #ComingEvent a {
+  padding: 30px 0px 30px 0;
+  position: absolute;
+  right: 0px;
+}
+header #HomeComingSeparator {
+  width: 100vw;
+  height: 100vh;
+}
+header #HomeComingSeparator img {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100vw;
+  height: 60vh;
+}
+
+main #HomeVisitCard {
+  display: flex;
+  justify-content: space-evenly;
+}
+main #HomeVisitCard #VisitCardFlex {
+  display: flex;
+}
+main #HomeVisitCard #VisitCardFlex .VisitCardInfo {
+  margin: 1.5em;
+}
+main #HomeVisitCard #VisitCardFlex .VisitCardInfo h3 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+main #HomeVisitCard #VisitCardFlex .VisitCardInfo p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+}
+main #HomeVisitCard img {
+  width: 396px;
+}
+main #HomeVisitCard h2 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.Home {
+  padding: 100px;
+}
+.Home .ButtonClassic {
   color: white;
   background-color: #002D57;
   display: block;
@@ -21,7 +160,7 @@
   border-radius: 20px;
   transition: all 0.7s;
 }
-#HomeGallery .ButtonClassic:hover {
+.Home .ButtonClassic:hover {
   color: #002D57;
   background-color: white;
   transition: all 0.7s;

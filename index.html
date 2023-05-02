@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mairie de Sévigny-la-Forêt</title>
     <link rel="stylesheet" href="sass/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="assets/js/page.js"></script>
 </head>
 <body>
     <header>
@@ -30,43 +32,48 @@
                 <a href="#">Accéder à l’agenda</a>
             </article>
         </div>
+        <div id="HomeComingSeparator">
+            <img src="assets/img/header/Separator.png" alt="Séparateur de section">
+        </div>
     </header>
     <main>
-        <section id="HomeVisitCard">
-            <h2>La mairie de Sévigny-la-Forêt</h2>
-            <img src="#" alt="Blason de la mairie">
+        <section id="HomeVisitCard" class="Home">
+            <img src="assets/img/HomeVisitCard/BlasonSLF.svg" alt="Blason de la mairie">
             <div id="VisitCard">
-                <div id="VisitCardLeft">
-                    <div class="VisitCardInfo">
-                        <h3>Adresse :</h3>
-                        <p>8 Rue Grande Rue,</p>
-                        <p>08230 Sévigny-la-Forêt</p>
+            <h2>Mairie de Sévigny-la-Forêt</h2>
+                <div id="VisitCardFlex">
+                    <div id="VisitCardLeft">
+                        <div class="VisitCardInfo">
+                            <h3>Adresse :</h3>
+                            <p>8 Rue Grande Rue,</p>
+                            <p>08230 Sévigny-la-Forêt</p>
+                        </div>
+                        <div class="VisitCardInfo">
+                            <h3>Téléphone :</h3>
+                            <p>03.24.54.12.68</p>
+                        </div>
+                        <div class="VisitCardInfo">
+                            <h3>Email :</h3>
+                            <p>mairie.sevigny-la-foret@wanadoo.fr</p>
+                        </div>
                     </div>
-                    <div class="VisitCardInfo">
-                        <h3>Téléphone :</h3>
-                        <p>03.24.54.12.68</p>
-                    </div>
-                    <div class="VisitCardInfo">
-                        <h3>Email :</h3>
-                        <p>mairie.sevigny-la-foret@wanadoo.fr</p>
-                    </div>
-                </div>
-                <div id="visitCardRight">
-                    <h3>Horaires d’ouverture :</h3>
-                    <div class="VisitCardInfo">
-                        <h3>Mardi :</h3>
-                        <p>de 17h00 à 18h30</p>
-                    </div>
-                    <div class="VisitCardInfo">
-                        <h3>Mardi :</h3>
-                        <p>de 10h00 à 12h00</p>
+                    <div id="visitCardRight" class="VisitCardInfo">
+                        <h3>Horaires d’ouverture :</h3>
+                        <div class="VisitCardInfo">
+                            <h3>Mardi :</h3>
+                            <p>de 17h00 à 18h30</p>
+                        </div>
+                        <div class="VisitCardInfo">
+                            <h3>Mardi :</h3>
+                            <p>de 10h00 à 12h00</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Carte de visite de la mairie de Sévigny-la-Forêt, informations et coordonnées -->
 
-        <section id="HomeGallery">
+        <section id="HomeGallery" class="Home">
             <h2>Sévigny en photos</h2>
             <ul>
                 <li><img src="#" alt="#"></li>
@@ -80,7 +87,7 @@
         </section>
         <!-- Avant page de la galerie de photos de la commune de Sévigny-la-Forêt, chaques liens menant à la page -->
 
-        <section id="HomeHistory">
+        <section id="HomeHistory" class="Home">
             <h2>Un petit bout d'histoire</h2>
             <article class="HomeHistoryCard">
                 <img src="#" alt="">
@@ -110,7 +117,7 @@
         </section>
         <!-- Avant page de l'histoire de la commune de Sévigny-la-Forêt, chaques liens menant à la page -->
 
-        <section id="HomeContactForm">
+        <section id="HomeContactForm" class="Home">
             <h2>Nous contacter</h2>
             <form action="#">
                 <div id="ContactFlex">
