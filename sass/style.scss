@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 html{
-    overflow-x: hidden;
+    // overflow-x: hidden;
     font-family: "Josefin Sans", sans-serif;
 
     scroll-behavior: smooth;
@@ -109,12 +109,22 @@ header{
             left: 0px;
             bottom: 0px;
             width: 100vw;
-            height: 60vh;
+            height: 65vh;
         }
     }
 }
 
 main{
+    .Home{
+        padding: 100px;
+        .ButtonClassic{
+            @include ButtonClassic;
+            &:hover{
+                @include ButtonClassicHover;
+            }
+        }
+        
+    }
     #HomeVisitCard{
         display: flex;
         justify-content: space-evenly;
@@ -150,15 +160,45 @@ main{
             text-transform: uppercase;
         }
     }
-}
+    #HomeGallery{
+        background-image: url("../assets/img/HomeGallery/BackgroundGallery.png");
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            @include HomeH2;
+        }
+        ul{
+            --n: 1;
+            --m: 6;
+            --g: 0px;
+            --f: .2;
+            
+            display: grid;
+            gap: var(--g);
+            width: 80vw;
+            height: 100vh;
+            grid-template-columns: repeat(var(--m),auto);
 
-.Home{
-    padding: 100px;
-    .ButtonClassic{
-        @include ButtonClassic;
-        &:hover{
-            @include ButtonClassicHover;
+            img{
+                width: 0;
+                height: 0;
+                min-height: 100%;
+                min-width: 100%;
+                object-fit: cover;
+                cursor: pointer;
+                filter: grayscale(80%);
+                transition: .35s linear;
+                &:hover{
+                    filter: grayscale(0);
+                    width:  calc(100vh*var(--f)/var(--n));
+                    height: calc(100vw*var(--f)/var(--m));
+                }
+            }
         }
     }
-    
 }
+

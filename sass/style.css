@@ -6,7 +6,6 @@
 }
 
 html {
-  overflow-x: hidden;
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
 }
@@ -102,9 +101,33 @@ header #HomeComingSeparator img {
   left: 0px;
   bottom: 0px;
   width: 100vw;
-  height: 60vh;
+  height: 65vh;
 }
 
+main .Home {
+  padding: 100px;
+}
+main .Home .ButtonClassic {
+  color: white;
+  background-color: #002D57;
+  display: block;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.7s;
+}
+main .Home .ButtonClassic:hover {
+  color: #002D57;
+  background-color: white;
+  transition: all 0.7s;
+}
 main #HomeVisitCard {
   display: flex;
   justify-content: space-evenly;
@@ -140,30 +163,49 @@ main #HomeVisitCard h2 {
   line-height: 48px;
   text-transform: uppercase;
 }
-
-.Home {
-  padding: 100px;
+main #HomeGallery {
+  background-image: url("../assets/img/HomeGallery/BackgroundGallery.png");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.Home .ButtonClassic {
-  color: white;
-  background-color: #002D57;
-  display: block;
-  width: 400px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
-  font-family: "Josefin Sans", sans-serif;
+main #HomeGallery h2 {
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  text-decoration: none;
-  border-radius: 20px;
-  transition: all 0.7s;
+  font-size: 64px;
+  line-height: 64px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.Home .ButtonClassic:hover {
-  color: #002D57;
-  background-color: white;
-  transition: all 0.7s;
+main #HomeGallery ul {
+  --n: 1;
+  --m: 6;
+  --g: 0px;
+  --f: .2;
+  display: grid;
+  gap: var(--g);
+  width: 80vw;
+  height: 100vh;
+  grid-template-columns: repeat(var(--m), auto);
+}
+main #HomeGallery ul img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: 0.35s linear;
+}
+main #HomeGallery ul img:hover {
+  filter: grayscale(0);
+  width: calc(100vh * var(--f) / var(--n));
+  height: calc(100vw * var(--f) / var(--m));
 }
 
 /*# sourceMappingURL=style.css.map */
