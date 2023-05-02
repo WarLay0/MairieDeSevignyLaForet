@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 html{
-    // overflow-x: hidden;
+    overflow-x: hidden;
     font-family: "Josefin Sans", sans-serif;
 
     scroll-behavior: smooth;
@@ -200,5 +200,97 @@ main{
             }
         }
     }
-}
+    #HomeHistory{
+        background-color: black;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            @include HomeH2;
+        }
+        article{
+            margin: 30px 0px 30px 0px;
+            display: flex;
+            width: 1000px;
+            color: white;
+            padding: 2em;
+            border-radius: 15px;
+            border: 3px solid #363636;
+            img{
+                width: 224px;
+                height: auto;
+            }
+            &:nth-child(2n){
+                flex-direction: row-reverse;
+            }
+            &:hover{
+                background-color: #363636;
+                transition: all 0.3s ease-in-out;
+            }
+            &:not(:hover){
+                transition: all 0.3s ease-out;
+            }
+        }
+    }
+    #HomeContactForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            @include HomeH2;
+            color: black;
+        }
+        form{
+            width: 70vw;
+            .HomeContact{
+                display: flex;
+                flex-direction: column;
+                input, textarea{
+                    border: 2px solid #979797;
+                    border-radius: 15px;
+                    padding: 1em;
+                    height: 70px;
+                }
+                label{
+                    font-family: 'Josefin Sans';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+            #ConractMail, #ContactMessage{
+                margin: 1.5em 0 1.5em 0;
+            }
+            #ContactFlex{
+                display: flex;
+                justify-content: space-between;
+                margin: 1.5em 0 1.5em 0;
+                .HomeContact{
+                    width: 45%;
 
+                }
+            }
+            #ContactSubmit{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                input{
+                    border: none;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            #ContactMessage{
+                textarea{
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
