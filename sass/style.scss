@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 html{
-    overflow-x: hidden;
+    //overflow-x: hidden;
     font-family: "Josefin Sans", sans-serif;
 
     scroll-behavior: smooth;
@@ -290,6 +290,49 @@ main{
                 textarea{
                     height: 400px;
                 }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: black;
+    height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .footerSection{
+        height: 200px;
+        h4{
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 30px;
+            }
+        #footerSectionContentLink{
+            p{
+                padding: .2em;
+            }
+        }
+        .footerSectionContent{
+            padding: .5em;
+            h5{
+                font-family: 'Josefin Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 20px;
+            }
+            p{
+                font-family: 'Josefin Sans';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 20px;
             }
         }
     }

@@ -6,7 +6,6 @@
 }
 
 html {
-  overflow-x: hidden;
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
 }
@@ -308,6 +307,46 @@ main #HomeContactForm form #ContactSubmit input:hover {
 }
 main #HomeContactForm form #ContactMessage textarea {
   height: 400px;
+}
+
+footer {
+  background-color: black;
+  height: 50vh;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .footerSection {
+  height: 200px;
+}
+footer .footerSection h4 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+footer .footerSection #footerSectionContentLink p {
+  padding: 0.2em;
+}
+footer .footerSection .footerSectionContent {
+  padding: 0.5em;
+}
+footer .footerSection .footerSectionContent h5 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+footer .footerSection .footerSectionContent p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
