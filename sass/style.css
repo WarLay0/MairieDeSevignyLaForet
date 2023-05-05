@@ -6,7 +6,6 @@
 }
 
 html {
-  overflow-x: hidden;
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
 }
@@ -40,6 +39,11 @@ header #HomeHeader h1 {
 header #HomeHeader img {
   width: 643px;
   height: 242px;
+}
+@media screen and (max-width: 768px) {
+  header #HomeHeader * {
+    display: none;
+  }
 }
 header nav ul {
   display: flex;
@@ -76,6 +80,11 @@ header nav ul li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+@media screen and (max-width: 768px) {
+  header nav * {
+    display: none;
+  }
+}
 header #HomeComingEvent {
   width: 388px;
   position: absolute;
@@ -108,6 +117,11 @@ header #HomeComingEvent #ComingEvent a {
   position: absolute;
   right: 0px;
 }
+@media screen and (max-width: 768px) {
+  header #HomeComingEvent * {
+    display: none;
+  }
+}
 header #HomeComingSeparator {
   height: 100vh;
 }
@@ -117,6 +131,11 @@ header #HomeComingSeparator img {
   bottom: 0;
   width: 100vw;
   height: 65vh;
+}
+@media screen and (max-width: 768px) {
+  header #HomeComingSeparator img {
+    display: none;
+  }
 }
 
 main .Home {
@@ -137,6 +156,14 @@ main .Home .ButtonClassic {
   text-decoration: none;
   border-radius: 20px;
   transition: all 0.7s;
+}
+@media screen and (max-width: 768px) {
+  main .Home .ButtonClassic {
+    width: 300px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 30px;
+  }
 }
 main .Home .ButtonClassic:hover {
   color: #002D57;
@@ -199,6 +226,13 @@ main #HomeGallery h2 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 1em;
 }
+@media screen and (max-width: 768px) {
+  main #HomeGallery h2 {
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
 main #HomeGallery ul {
   margin-bottom: 5em;
   --n: 1;
@@ -244,10 +278,17 @@ main #HomeHistory h2 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 1em;
 }
+@media screen and (max-width: 768px) {
+  main #HomeHistory h2 {
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
 main #HomeHistory article {
   margin: 30px 0px 30px 0px;
   display: flex;
-  width: 1000px;
+  width: 70vw;
   color: white;
   padding: 2em;
   border-radius: 15px;
@@ -273,7 +314,7 @@ main #HomeHistory article .HistoryCardContent p {
   text-align: justify;
 }
 main #HomeHistory article img {
-  width: 224px;
+  width: 15vw;
   height: auto;
 }
 main #HomeHistory article:nth-child(2n) {
@@ -303,6 +344,13 @@ main #HomeContactForm h2 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 1em;
   color: black;
+}
+@media screen and (max-width: 768px) {
+  main #HomeContactForm h2 {
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+  }
 }
 main #HomeContactForm form {
   width: 70vw;
@@ -353,14 +401,10 @@ main #HomeContactForm form #ContactMessage textarea {
 
 footer {
   background-color: black;
-  height: 50vh;
   color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-footer .footerSection {
-  height: 200px;
 }
 footer .footerSection h4 {
   font-family: "Josefin Sans";
@@ -395,6 +439,105 @@ footer .footerSection #footerSocial a {
   justify-content: space-evenly;
   align-items: center;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  main .Home {
+    padding: 50px;
+  }
+  main #HomeVisitCard {
+    flex-direction: column;
+  }
+  main #HomeVisitCard img {
+    width: 50%;
+  }
+  main #HomeVisitCard h2 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  main #HomeVisitCard #VisitCardFlex {
+    flex-direction: column;
+  }
+  main #HomeVisitCard #VisitCardFlex .VisitCardInfo {
+    margin: 1.5em;
+  }
+  main #HomeVisitCard #VisitCardFlex .VisitCardInfo h3 {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  main #HomeVisitCard #VisitCardFlex .VisitCardInfo p {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  main #HomeGallery ul {
+    display: flex;
+    flex-direction: column;
+    filter: grayscale(0%);
+    height: auto;
+  }
+  main #HomeGallery ul img {
+    width: 100%;
+    height: 20vh;
+  }
+  main #HomeGallery ul img:hover {
+    width: 100%;
+    height: 20vh;
+  }
+  main #HomeGallery ul li:nth-child(5), main #HomeGallery ul li:nth-child(6) {
+    display: none;
+  }
+  main #HomeHistory article {
+    flex-direction: column;
+  }
+  main #HomeHistory article:nth-child(2n) {
+    flex-direction: column;
+  }
+  main #HomeHistory article img {
+    margin: auto;
+    width: 50%;
+    height: auto;
+  }
+  main #HomeHistory article .HistoryCardContent p {
+    text-align: start;
+  }
+  main #HomeContactForm form {
+    width: 100%;
+  }
+  main #HomeContactForm form #ContactFlex {
+    flex-direction: column;
+  }
+  main #HomeContactForm form #ContactFlex .HomeContact {
+    width: 100%;
+  }
+  main #HomeContactForm form #ContactFlex .HomeContact input {
+    height: 50px;
+  }
+  main #HomeContactForm form #ContactFlex .HomeContact #name {
+    margin-bottom: 1.5em;
+  }
+  main #HomeContactForm form #ContactMessage textarea {
+    height: 200px;
+  }
+  main #HomeContactForm form #ContactMail input {
+    height: 50px;
+  }
+  footer {
+    height: auto;
+    flex-direction: column;
+    padding: 3em;
+    align-items: start;
+  }
+  footer .footerSection {
+    margin-bottom: 3em;
+    margin-top: 3em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
