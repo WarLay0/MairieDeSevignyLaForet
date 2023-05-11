@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    console.log($("#burgerButtonClose"));
+    $("#burgerButton").click(function(){
+        $("#navbarBurger").addClass("activeMenu");
+        $("#navbarBurger").removeClass("unactiveMenu");
+    });
+    $("#burgerButtonClose").click(function(){
+        $("#navbarBurger").removeClass("activeMenu");
+        $("#navbarBurger").addClass("unactiveMenu");
+    });
+})

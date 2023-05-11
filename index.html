@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="assets/img/HomeVisitCard/BlasonSLF.svg">
     <link rel="stylesheet" href="sass/style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="assets/js/menuBurger.js"></script>
 </head>
 <body>
     <header>
@@ -15,11 +16,25 @@
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Histoire</a></li>
+                <li><a href="#">Galerie</a></li>
                 <li><a href="#">Agenda</a></li>
                 <li><a href="#">Actualités</a></li>
                 <li><a href="#">Forum</a></li>
             </ul>
         </nav>
+        <img src="assets/img/header/menuBurger.svg" alt="" id="burgerButton">
+        <div id="navbarBurger" class="unactiveMenu">
+            <img src="assets/img/header/menuBurgerClose.svg" alt="" id="burgerButtonClose">
+            <div id="burgerFlex">
+                <a href="#"><div class="navbarBurgerLine">Accueil</div></a>
+                <a href="#"><div class="navbarBurgerLine">Histoire</div></a>
+                <a href="#"><div class="navbarBurgerLine">Galerie</div></a>
+                <a href="#"><div class="navbarBurgerLine">Agenda</div></a>
+                <a href="#"><div class="navbarBurgerLine">Actualités</div></a>
+                <a href="#"><div class="navbarBurgerLine">Forum</div></a>
+            </div>
+
+        </div>
         <div id="HomeHeader">
             <h1>Mairie de</h1>
             <img src="assets/img/header/Sign.png" alt="Panneau de la mairie de Sévigny-la-Forêt">

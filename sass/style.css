@@ -19,6 +19,9 @@ header {
   background-position: left;
   background-attachment: fixed;
 }
+header #burgerButton {
+  display: none;
+}
 header #HomeHeader {
   display: flex;
   flex-direction: column;
@@ -85,6 +88,60 @@ header nav ul li a:hover:after {
   header nav * {
     display: none;
   }
+}
+header #navbarBurger {
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  header #navbarBurger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    overflow: hidden;
+  }
+  header #navbarBurger #burgerButtonClose {
+    z-index: 10;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 20vw;
+  }
+  header #navbarBurger #burgerFlex {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  header #navbarBurger #burgerFlex a {
+    display: block;
+    padding: 1em;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+}
+header .unactiveMenu {
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+header .activeMenu {
+  position: fixed;
+  top: 0;
+  transform: translateY(0%);
+  transition: all 0.3s ease-in-out;
 }
 header #HomeComingEvent {
   width: 388px;
@@ -444,6 +501,14 @@ footer .footerSection #footerSocial a {
 }
 
 @media screen and (max-width: 768px) {
+  header #burgerButton {
+    display: block;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 20vw;
+  }
   main .Home {
     padding: 50px;
   }
