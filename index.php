@@ -1,40 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mairie de Sévigny-la-Forêt</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/HomeVisitCard/BlasonSLF.svg">
-    <link rel="stylesheet" href="sass/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <script src="assets/js/menuBurger.js"></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Histoire</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">Agenda</a></li>
-                <li><a href="#">Actualités</a></li>
-                <li><a href="#">Forum</a></li>
-            </ul>
-        </nav>
-        <img src="assets/img/header/menuBurger.svg" alt="" id="burgerButton">
-        <div id="navbarBurger" class="unactiveMenu">
-            <img src="assets/img/header/menuBurgerClose.svg" alt="" id="burgerButtonClose">
-            <div id="burgerFlex">
-                <a href="#"><div class="navbarBurgerLine">Accueil</div></a>
-                <a href="#"><div class="navbarBurgerLine">Histoire</div></a>
-                <a href="#"><div class="navbarBurgerLine">Galerie</div></a>
-                <a href="#"><div class="navbarBurgerLine">Agenda</div></a>
-                <a href="#"><div class="navbarBurgerLine">Actualités</div></a>
-                <a href="#"><div class="navbarBurgerLine">Forum</div></a>
-            </div>
-
-        </div>
+<?php
+    require 'cut/head.php';
+    require 'cut/nav.php';
+?>
         <div id="HomeHeader">
             <h1>Mairie de</h1>
             <img src="assets/img/header/Sign.png" alt="Panneau de la mairie de Sévigny-la-Forêt">
@@ -167,42 +134,6 @@
             </form>
         </section>
     </main>
-    <footer>
-        <div class="footerSection">
-            <h4>Mairie</h4>
-            <div class="footerSectionContent">
-                <h5>Adresse :</h5>
-                <p>8 Rue Grande Rue,</p>
-                <p>08230 Sévigny-la-Forêt</p>
-            </div>
-            <div class="footerSectionContent">
-                <h5>Téléphone :</h5>
-                <p>03.24.54.12.68</p>
-            </div>  
-            <div class="footerSectionContent">
-                <h5>Email :</h5>
-                <p>mairie.sevigny-la-foret@wanadoo.fr</p>
-            </div>      
-        </div>
-        <div class="footerSection">
-            <h4>Réseaux</h4>
-            <div class="footerSectionContent" id="footerSocial">
-                <a href="https://www.facebook.com/tourismeVPA/" target="_blank">
-                    <img src="/assets/img/footer/Facebook.png" alt="Logo facebook">
-                    <p>Commune de Sévigny-La-Forêt</p>
-                </a>
-            </div>
-        </div>
-        <div class="footerSection">
-            <h4>Liens utiles</h4>
-            <div class="footerSectionContent" id="footerSectionContentLink">
-                <p>Lorem Ipsum Dolore Sit Amet</p>
-                <p>Lorem Ipsum Dolore Sit Amet</p>
-                <p>Lorem Ipsum Dolore Sit Amet</p>
-                <p>Lorem Ipsum Dolore Sit Amet</p>
-                <p>Lorem Ipsum Dolore Sit Amet</p>
-            </div>            
-        </div>
-    </footer>
-</body>
-</html>
+<?php
+    require 'cut/footer.php';
+?>
