@@ -65,7 +65,7 @@
                 <li><img src="assets/img/HomeGallery/SLF_photo_5.jpg" alt="#"></li>
                 <li><img src="assets/img/HomeGallery/SLF_photo_6.jpg" alt="#"></li>
             </ul>
-            <a href="#" class="ButtonClassic">Voir plus</a>
+            <a href="pages/galerie.php" class="ButtonClassic">Voir plus</a>
         </section>
         <!-- Avant page de la galerie de photos de la commune de Sévigny-la-Forêt, chaques liens menant à la page -->
 

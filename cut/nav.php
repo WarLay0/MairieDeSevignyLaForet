@@ -14,7 +14,7 @@
             <div id="burgerFlex">
                 <a href="#"><div class="navbarBurgerLine">Accueil</div></a>
                 <a href="#"><div class="navbarBurgerLine">Histoire</div></a>
-                <a href="#"><div class="navbarBurgerLine">Galerie</div></a>
+                <a href="../pages/galerie.php"><div class="navbarBurgerLine">Galerie</div></a>
                 <a href="#"><div class="navbarBurgerLine">Agenda</div></a>
                 <a href="#"><div class="navbarBurgerLine">Actualités</div></a>
                 <a href="#"><div class="navbarBurgerLine">Forum</div></a>
