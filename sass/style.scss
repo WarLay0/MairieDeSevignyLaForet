@@ -44,7 +44,7 @@ header{
             width: 643px;
             height: 242px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 992px) {
             *{
                 display: none;
             }
@@ -86,7 +86,7 @@ header{
                 }
             }
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 992px) {
             *{
                 display: none;
             }
@@ -94,7 +94,7 @@ header{
     }
     #navbarBurger{
         transition: all 0.3s ease-in-out;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 992px) {
             position: fixed;
             top: 0;
             right: 0;
@@ -108,7 +108,7 @@ header{
                 top: 0;
                 right: 0;
                 position: absolute;
-                width: 20vw;
+                width: 10vw;
             }
             #burgerFlex{
                 width: 100vw;
@@ -178,7 +178,7 @@ header{
                 right: 0px;
             }
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 992px) {
             *{
                 display: none;
             }
@@ -193,10 +193,18 @@ header{
             width: 100vw;
             height: 65vh;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 992px) {
             img{
                 display: none;
             }
+        }
+    }
+    @media screen and (max-width: 1650px) {
+        #HomeComingEvent{
+            display: none;
+        }
+        #HomeComingSeparator{
+            display: none;
         }
     }
     
@@ -457,7 +465,7 @@ footer{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     header{
         #burgerButton{
             display: block;
@@ -465,7 +473,7 @@ footer{
             top: 0;
             right: 0;
             position: absolute;
-            width: 20vw;
+            width: 10vw;
         }
     }
     main{

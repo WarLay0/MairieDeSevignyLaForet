@@ -44,7 +44,7 @@ header #HomeHeader img {
   width: 643px;
   height: 242px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   header #HomeHeader * {
     display: none;
   }
@@ -84,7 +84,7 @@ header nav ul li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   header nav * {
     display: none;
   }
@@ -92,7 +92,7 @@ header nav ul li a:hover:after {
 header #navbarBurger {
   transition: all 0.3s ease-in-out;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   header #navbarBurger {
     position: fixed;
     top: 0;
@@ -108,7 +108,7 @@ header #navbarBurger {
     top: 0;
     right: 0;
     position: absolute;
-    width: 20vw;
+    width: 10vw;
   }
   header #navbarBurger #burgerFlex {
     width: 100vw;
@@ -175,7 +175,7 @@ header #HomeComingEvent #ComingEvent a {
   position: absolute;
   right: 0px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   header #HomeComingEvent * {
     display: none;
   }
@@ -190,8 +190,16 @@ header #HomeComingSeparator img {
   width: 100vw;
   height: 65vh;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   header #HomeComingSeparator img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1650px) {
+  header #HomeComingEvent {
+    display: none;
+  }
+  header #HomeComingSeparator {
     display: none;
   }
 }
@@ -500,14 +508,14 @@ footer .footerSection #footerSocial a {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   header #burgerButton {
     display: block;
     z-index: 10;
     top: 0;
     right: 0;
     position: absolute;
-    width: 20vw;
+    width: 10vw;
   }
   main .Home {
     padding: 50px;

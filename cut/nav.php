@@ -2,7 +2,7 @@
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Histoire</a></li>
-                <li><a href="#">Galerie</a></li>
+                <li><a href="../pages/galerie.php">Galerie</a></li>
                 <li><a href="#">Agenda</a></li>
                 <li><a href="#">Actualités</a></li>
                 <li><a href="#">Forum</a></li>
