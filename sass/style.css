@@ -464,6 +464,29 @@ main #HomeContactForm form #ContactSubmit input:hover {
 main #HomeContactForm form #ContactMessage textarea {
   height: 400px;
 }
+main #GalleryFlex {
+  display: flex;
+  flex-direction: column;
+}
+main #GalleryFlex .GalleryFlexItem {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+main #GalleryFlex .GalleryFlexItem img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+main #GalleryFlex .GalleryFlexItem p {
+  width: 50%;
+}
+main #GalleryFlex .GalleryFlexItem:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+main #GalleryFlex .GalleryFlexItem:not(:has(p)) {
+  background-color: red;
+}
 
 footer {
   background-color: black;

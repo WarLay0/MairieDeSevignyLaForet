@@ -412,6 +412,32 @@ main{
             }
         }
     }
+
+
+    #GalleryFlex{
+        display: flex;
+        flex-direction: column;
+        .GalleryFlexItem{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100vw;            
+            img{
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+            }
+            p{
+                width: 50%;
+            }
+            &:nth-child(2n){
+                flex-direction: row-reverse;
+            }
+            &:not(:has(p)){
+                background-color: red;
+            }
+
+        }
+    }
 }
 
 footer{
@@ -463,7 +489,6 @@ footer{
         }
     }
 }
-
 
 @media screen and (max-width: 992px) {
     header{
