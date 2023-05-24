@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/img/HomeVisitCard/BlasonSLF.svg">
     <link rel="stylesheet" href="../sass/style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../assets/js/header.js"></script>
     <script src="../assets/js/menuBurger.js"></script>
 </head>
 <body>

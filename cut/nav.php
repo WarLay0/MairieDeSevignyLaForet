@@ -8,9 +8,9 @@
                 <li><a href="#">Forum</a></li>
             </ul>
         </nav>
-        <img src="assets/img/header/menuBurger.svg" alt="" id="burgerButton">
+        <img src="../assets/img/header/menuBurger.svg" alt="" id="burgerButton">
         <div id="navbarBurger" class="unactiveMenu">
-            <img src="assets/img/header/menuBurgerClose.svg" alt="" id="burgerButtonClose">
+            <img src="../assets/img/header/menuBurgerClose.svg" alt="" id="burgerButtonClose">
             <div id="burgerFlex">
                 <a href="../index.php"><div class="navbarBurgerLine">Accueil</div></a>
                 <a href="#"><div class="navbarBurgerLine">Histoire</div></a>

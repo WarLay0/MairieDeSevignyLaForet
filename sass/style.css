@@ -468,24 +468,28 @@ main #GalleryFlex {
   display: flex;
   flex-direction: column;
 }
-main #GalleryFlex .GalleryFlexItem {
+main #GalleryFlex .GalleryFlexItem, main #GalleryFlex #noArticle {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
 }
-main #GalleryFlex .GalleryFlexItem img {
+main #GalleryFlex .GalleryFlexItem img, main #GalleryFlex #noArticle img {
   width: 400px;
   height: 400px;
   object-fit: cover;
 }
-main #GalleryFlex .GalleryFlexItem p {
+main #GalleryFlex .GalleryFlexItem p, main #GalleryFlex #noArticle p {
   width: 50%;
+  text-align: right;
 }
-main #GalleryFlex .GalleryFlexItem:nth-child(2n) {
+main #GalleryFlex .GalleryFlexItem:nth-child(2n), main #GalleryFlex #noArticle:nth-child(2n) {
   flex-direction: row-reverse;
 }
-main #GalleryFlex .GalleryFlexItem:not(:has(p)) {
-  background-color: red;
+main #GalleryFlex .GalleryFlexItem:nth-child(2n) p, main #GalleryFlex #noArticle:nth-child(2n) p {
+  text-align: left;
+}
+main #GalleryFlex .GalleryFlexItem:not(:has(p)), main #GalleryFlex #noArticle:not(:has(p)) {
+  background-color: green;
 }
 
 footer {

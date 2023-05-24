@@ -417,7 +417,7 @@ main{
     #GalleryFlex{
         display: flex;
         flex-direction: column;
-        .GalleryFlexItem{
+        .GalleryFlexItem, #noArticle{
             display: flex;
             justify-content: space-evenly;
             width: 100vw;            
@@ -428,12 +428,16 @@ main{
             }
             p{
                 width: 50%;
+                text-align: right;
             }
             &:nth-child(2n){
                 flex-direction: row-reverse;
+                p{
+                    text-align: left;
+                }
             }
             &:not(:has(p)){
-                background-color: red;
+                background-color: green;
             }
 
         }

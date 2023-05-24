@@ -1,6 +1,7 @@
 <?php
     require 'cut/head.php';
     require 'cut/nav.php';
+    echo '<script>pageName("index");</script>';
 ?>
         <div id="HomeHeader">
             <h1>Mairie de</h1>
@@ -17,6 +18,7 @@
         <div id="HomeComingSeparator">
             <img src="assets/img/header/Separator.png" alt="Séparateur de section">
         </div>
+        <div id="idPage" style="display: none">index</div>
     </header>
     <main>
         <section id="HomeVisitCard" class="Home">

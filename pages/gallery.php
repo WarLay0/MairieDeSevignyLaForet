@@ -1,6 +1,7 @@
 <?php
     require '../cut/head.php';
     require '../cut/nav.php';
+    echo '<script>pageName("gallery");</script>';
 ?>
     </header>
     <main>
@@ -9,10 +10,16 @@
             <?php
                 $dir = '../assets/img/gallery/';
                 $files = scandir($dir);
+                $noArticle = [];
                 foreach($files as $file){
-                    $fileName = substr($file, 0, strpos($file,'.'));
+                    $fileName = substr($file, 0, strpos($file,'.'));                    
                     if($file != '.' && $file != '..'){
-                        echo '<div class="GalleryFlexItem"><img src="../assets/img/gallery/'.$file.'" alt="">'.callArticle($fileName).'</div>';
+                        $article = callArticle($fileName);
+                        if($article != null){
+                            echo '<div class="GalleryFlexItem"><img src="../assets/img/gallery/'.$file.'" alt="">'.$article.'</div>';
+                        }else {
+                            array_push($noArticle, $file);
+                        }
                     }
                 }
 
@@ -27,6 +34,11 @@
                     }
                 }
                 }
+                echo '<div id="noArticle">';
+                foreach($noArticle as $article){
+                    echo '<img src="../assets/img/gallery/'.$article.'" alt="">';
+                }
+                echo '</div>';
             ?>
         </div>
     </main>
