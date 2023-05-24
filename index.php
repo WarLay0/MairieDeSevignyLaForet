@@ -111,29 +111,9 @@
 
         <section id="HomeContactForm" class="Home">
             <h2>Nous contacter</h2>
-            <form action="#">
-                <div id="ContactFlex">
-                    <div id="ContactName" class="HomeContact">
-                        <label for="name" id="name">Prénom :</label>
-                        <input type="text" name="name" id="name" placeholder="Ex : John" required>
-                    </div>
-                    <div id="ContactFName" class="HomeContact">
-                        <label for="fname">Nom :</label>
-                        <input type="text" name="fname" id="fname" placeholder="Ex : Doe" required>
-                    </div>
-                </div>
-                <div id="ContactMail" class="HomeContact">
-                    <label for="mail">E-mail :</label>
-                    <input type="email" name="mail" id="mail" placeholder="Ex : john.doe@gmail.com" required>
-                </div>
-                <div id="ContactMessage" class="HomeContact">
-                    <label for="message">Message :</label>
-                    <textarea name="message" id="message" placeholder="Votre message" required></textarea>
-                </div>
-                <div id="ContactSubmit" >
-                    <input type="submit" value="Envoyer" class="ButtonClassic">
-                </div>
-            </form>
+            <?php
+                require 'cut/form.php';
+            ?>
         </section>
     </main>
 <?php

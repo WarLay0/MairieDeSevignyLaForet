@@ -12,4 +12,7 @@
     <script src="../assets/js/menuBurger.js"></script>
 </head>
 <body>
+    <?php
+        session_start();
+    ?>
     <header>

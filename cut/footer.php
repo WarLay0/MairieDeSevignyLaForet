@@ -18,7 +18,7 @@
         <div class="footerSection">
             <h4>Réseaux</h4>
             <div class="footerSectionContent" id="footerSocial">
-                <a href="https://www.facebook.com/tourismeVPA/" target="_blank">
+                <a href="https://www.facebook.com/MairieSLF08/" target="_blank">
                     <img src="/assets/img/footer/Facebook.png" alt="Logo facebook">
                     <p>Commune de Sévigny-La-Forêt</p>
                 </a>
