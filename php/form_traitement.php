@@ -43,7 +43,10 @@ if(empty($_POST)){
 
     $_SESSION['errors'] = $errors;
     if(empty($_SESSION['errors'])){
-        echo 'Formulaire envoyé';
+        echo 'Faire le code pour recevoir le mail';
+        //Code pour rcevoir le mail
+
+        
     }else {
         header('Location: ../index.php#ContactFlex');
     }
