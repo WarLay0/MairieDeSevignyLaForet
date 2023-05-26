@@ -44,6 +44,34 @@
     </article>
     <article>
         <h2>Actualités</h2>
+        <?php
+            echo '<table>';
+                echo '<tr>';
+                    echo '<th>Id</th>';
+                    echo '<th>Titre</th>';
+                    echo '<th>Catégorie</th>';
+                    echo '<th>Texte</th>';
+                    echo '<th>Fichier</th>';
+                    echo '<th>Date</th>';
+                    echo '<th>Modifier</th>';
+                    echo '<th>Supprimer</th>';
+                echo '</tr>';
+                foreach ($actus as $actu) {
+                    //Faire dans un tableau
+                    
+                    echo '<tr>';
+                    echo '<td>'.$actu['id'].'</td>';
+                    echo '<td>'.$actu['titre'].'</td>';
+                    echo '<td>'.$actu['texte'].'</td>';
+                    echo '<td>'.$actu['categorie'].'</td>';
+                    echo '<td>'.$actu['fichier'].'</td>';
+                    echo '<td>'.$actu['date'].'</td>';
+                    echo '<td><a href="../admin/adminAssets/crud/actuUpdate.php?id='.$actu['id'].'">Modifier</a></td>';
+                    echo '<td><a href="../admin/adminAssets/crud/actuDelete.php?id='.$actu['id'].'">Supprimer</a></td>';
+                    echo '</tr>';
+                }
+            echo '</table>';
+        ?>
     </article>
 </body>
 </html>
