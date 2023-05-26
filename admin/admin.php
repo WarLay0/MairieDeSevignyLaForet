@@ -72,6 +72,7 @@
                 }
             echo '</table>';
         ?>
+        <a href="../admin/adminAssets/crud/actuAdd.php">Ajouter une actualité</a>
     </article>
 </body>
 </html>
