@@ -488,10 +488,6 @@ main #GalleryFlex .GalleryFlexItem:nth-child(2n), main #GalleryFlex #noArticle:n
 main #GalleryFlex .GalleryFlexItem:nth-child(2n) p, main #GalleryFlex #noArticle:nth-child(2n) p {
   text-align: left;
 }
-main #GalleryFlex .GalleryFlexItem:not(:has(p)), main #GalleryFlex #noArticle:not(:has(p)) {
-  background-color: green;
-}
-
 footer {
   background-color: black;
   padding: 5em;

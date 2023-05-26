@@ -1,7 +1,12 @@
 <?php
 function verifyError($name){
-    if(in_array($name, $_SESSION['errors'])){
-        return '<p class="error">Veuillez remplir le champ "'.$name.'" correctement</p>';
+    if(isset($_SESSION['errors'])){
+        if(in_array($name, $_SESSION['errors'])){
+            return '<p class="error">Veuillez remplir le champ "'.$name.'" correctement</p>';
+        }
+    }else{
+        return '<p class="error" style="display: none;"></p>';
+
     }
 }
 echo '
