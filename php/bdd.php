@@ -2,8 +2,6 @@
 // Récupération des données de connexion à la base de données
 require '../admin/bddaccess.php';
 // Démarrage de la session
-session_start();
-
 function bdd(){
     $server = 'localhost';
 
