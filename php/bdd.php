@@ -14,7 +14,7 @@ function bdd(){
     $server = 'localhost';
 
     try{
-        $connexion = new PDO("mysql:host=$server;dbname=mairiesevignylaforet", NAME, PASS);
+        $connexion = new PDO("mysql:host=$server;dbname=mairiesevignylaforet", "root", "");
         
         $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
