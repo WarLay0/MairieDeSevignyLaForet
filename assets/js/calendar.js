@@ -9,6 +9,7 @@ $(document).ready(function() {
     var eventEnd = $(this).data('event-end');
     var eventUrl = $(this).data('event-url');
 
+
     $('#calendar').fullCalendar('renderEvent', {
       id: eventId,
       title: eventTitle,
