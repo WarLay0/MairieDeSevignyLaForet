@@ -59,11 +59,6 @@ header #HomeHeader img {
   width: 643px;
   height: 242px;
 }
-@media screen and (max-width: 992px) {
-  header #HomeHeader * {
-    display: none;
-  }
-}
 header nav ul {
   display: flex;
   justify-content: flex-end;
@@ -547,6 +542,22 @@ footer .footerSection #footerSocial a {
 }
 
 @media screen and (max-width: 992px) {
+  header {
+    height: 75vh;
+  }
+  header #HomeHeader img {
+    width: 100%;
+    height: auto;
+  }
+  header #HomeHeader h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  header #barBurger {
+    display: block;
+    height: 7vh;
+    background-color: white;
+  }
   header #burgerButton {
     display: block;
     z-index: 10;
@@ -563,6 +574,8 @@ footer .footerSection #footerSocial a {
   }
   main #HomeVisitCard img {
     width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2em;
   }
   main #HomeVisitCard h2 {
     text-align: center;

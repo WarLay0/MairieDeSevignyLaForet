@@ -1,4 +1,10 @@
-let index = [100, 'HeroImage.png']
+// Récupérer le vw de la page
+let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+if (vw <= 992) {
+    let index = [100, 'HeroImage.png']   
+}else{
+    let index = [85, 'HeroImage.png']
+}
 let gallery = [50, 'GalleryImage.jpg']
 let agenda = [50, 'AgendaImage.jpg']
 let actu = [50, 'ActuImage.jpg']

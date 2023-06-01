@@ -45,11 +45,6 @@ header{
             width: 643px;
             height: 242px;
         }
-        @media screen and (max-width: 992px) {
-            *{
-                display: none;
-            }
-        }
     }
     nav{
         ul{
@@ -497,6 +492,23 @@ footer{
 
 @media screen and (max-width: 992px) {
     header{
+        height: 75vh;
+        #HomeHeader{
+            img{
+                width: 100%;
+                height: auto;
+            }
+            h1{
+                font-size: 40px;
+                line-height: 40px;
+            }
+            
+        }
+        #barBurger{
+            display: block;
+            height: 7vh;
+            background-color: white;
+        }
         #burgerButton{
             display: block;
             z-index: 10;
@@ -514,6 +526,8 @@ footer{
             flex-direction: column;
             img{
                 width: 50%;
+                margin: 0 auto;
+                margin-bottom: 2em;
             }
             h2{
                 text-align: center;
