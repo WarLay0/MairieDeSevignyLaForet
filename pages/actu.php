@@ -5,9 +5,13 @@
 ?>
     </header>
     <main>
-        <?php
-            require '../php/actuCode.php';
-        ?>
+        <input type="search" id="searchbar">
+        <div id="searchDiv">
+            <?php
+                require '../php/actuCode.php';
+            ?>
+        </div>
+        
     </main>
 <?php
     require '../cut/footer.php';

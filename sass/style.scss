@@ -12,7 +12,8 @@ html{
     scroll-behavior: smooth;
 }
 // Initialisation du projet
-
+@import '_fullcalendar.scss';
+@import '_actu.scss';
 header{
     width: 100vw;
     height: 100vh;

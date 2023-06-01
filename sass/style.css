@@ -11,6 +11,21 @@ html {
   scroll-behavior: smooth;
 }
 
+#calendar {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.actuArticle {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.actuArticle img {
+  width: 25vw;
+  height: auto;
+}
+
 header {
   width: 100vw;
   height: 100vh;
