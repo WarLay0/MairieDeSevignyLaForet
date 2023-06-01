@@ -9,12 +9,11 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: lime;
 }
 #agendaChoice{
     width: 50%;
     height: 100%;
-    background-color: red;
+    background-color: rgb(192, 104, 104);
     cursor: pointer;
 }
 #agendaChoice h1{
@@ -26,7 +25,7 @@
 #actuChoice{
     width: 50%;
     height: 100%;
-    background-color: blue;
+    background-color: rgb(122, 122, 173);
     cursor: pointer;
 }
 #actuChoice h1{
@@ -37,7 +36,7 @@
 }
 .hover h1{
     color: white;
-    font-size: 5em;
+    font-size: 4em;
     transition: 0.5s;
     transition: all 0.5s ease-in-out;
 }
@@ -51,4 +50,31 @@
 }
 .notActive{
     display: none;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th, td{
+    border: 1px solid black;
+}
+th{
+    background-color: #f2f2f2;
+}
+td{
+    text-align: center;
+    padding: 1em;
+}
+tr:hover{
+    background-color: #ddd;
+}
+.backButton{
+    padding: 1em;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1em;
 }
