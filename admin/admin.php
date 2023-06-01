@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
+    <link rel="stylesheet" href="adminAssets/adminstyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="adminAssets/adminapp.js"></script>
 </head>
 <body>
     <div class="pannel">
-        <div id="agendaChoice"></div>
-        <div id="actuChoice"></div>
+        <div id="agendaChoice">
+            <h1>Agenda</h1>
+        </div>
+        <div id="actuChoice">
+            <h1>Actualités</h1>
+        </div>
     </div>
-    <article>
+    <article id="agenda" class="notActive">
         <h2>Agenda</h2>
+        <button class="backButton">Back</button>
         <?php
             require '../admin/adminAssets/bddCrud.php';
             echo '<table>';
@@ -42,8 +50,9 @@
         ?>
         <a href="../admin/adminAssets/crud/eventAdd.php">Ajouter un évènement</a>
     </article>
-    <article>
+    <article id="actu" class="notActive">
         <h2>Actualités</h2>
+        <button class="backButton">Back</button>
         <?php
             echo '<table>';
                 echo '<tr>';

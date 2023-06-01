@@ -27,8 +27,8 @@
         <div class="footerSection">
             <h4>Liens utiles</h4>
             <div class="footerSectionContent" id="footerSectionContentLink">
-                <p>Lorem Ipsum Dolore Sit Amet</p>
-                <p>Lorem Ipsum Dolore Sit Amet</p>
+                <p><a href="https://www.tourisme-valleesetplateaudardenne.com/" target="_blank">Office de Tourisme Vallées et Plateau d'Ardenne</a></p>
+                <p><a href="https://www.cc-valleesetplateaudardenne.fr/">Communauté de commune Vallées et Plateau d'Ardenne</a></p>
                 <p>Lorem Ipsum Dolore Sit Amet</p>
                 <p>Lorem Ipsum Dolore Sit Amet</p>
                 <p>Lorem Ipsum Dolore Sit Amet</p>

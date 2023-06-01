@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pannel{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: lime;
+}
+#agendaChoice{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    cursor: pointer;
+}
+#agendaChoice h1{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+#actuChoice{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    cursor: pointer;
+}
+#actuChoice h1{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+.hover h1{
+    color: white;
+    font-size: 5em;
+    transition: 0.5s;
+    transition: all 0.5s ease-in-out;
+}
+.notHover h1{
+    color: black;
+    transition: 0.5s;
+    transition: all 0.5s ease-in-out;
+}
+.active{
+    display: block;
+}
+.notActive{
+    display: none;
+}
