@@ -5,6 +5,9 @@
 ?>
     </header>
     <main>
+        <hr>
+            <h1>Agenda</h1>
+        <hr id="mainHR">
         <div id="calendar"></div>
         <?php
             require '../php/agendaCode.php';

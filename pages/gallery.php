@@ -5,7 +5,9 @@
 ?>
     </header>
     <main>
-        <h1>Galerie</h1>
+        <hr>
+            <h1>Galerie</h1>
+        <hr id="mainHR">
         <div id="GalleryFlex">
             <?php
                 $dir = '../assets/img/gallery/';
@@ -17,6 +19,7 @@
                         $article = callArticle($fileName);
                         if($article != null){
                             echo '<div class="GalleryFlexItem"><img src="../assets/img/gallery/'.$file.'" alt="">'.$article.'</div>';
+                            // echo '<hr>';
                         }else {
                             array_push($noArticle, $file);
                         }

@@ -1,6 +1,13 @@
 $(document).ready(function() {
   moment.locale('fr');
-  $('#calendar').fullCalendar();
+  $('#calendar').fullCalendar({
+    locale: 'fr',
+    header: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'month,agendaWeek,listWeek'
+    },
+});
 
   $('[data-event-id]').each(function() {
     var eventId = $(this).data('event-id');

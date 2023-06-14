@@ -17,6 +17,8 @@ foreach ($actus as $actu){
     echo '<p class="actuCatégorie">'.$actu['categorie'].'</p> ';
     echo '<img class="actuImage" src="../assets/img/actu/'.$actu['fichier'].'">';
     echo '</article>';
+    echo '<hr>';
+    ;
 }
 
 

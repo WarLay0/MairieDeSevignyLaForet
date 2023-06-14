@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div id="visitCardRight" class="VisitCardInfo">
-                        <h3>Horaires d’ouverture :</h3>
+                        <h3>Horaires d'ouverture :</h3>
                         <div class="VisitCardInfo">
                             <h3>Mardi :</h3>
                             <p>de 17h00 à 18h30</p>
