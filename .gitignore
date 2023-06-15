@@ -1,4 +1,3 @@
-# Ajouter dans le git ignore le dossier admin
-/admin
+/admin/bddaccess.php
 
 
