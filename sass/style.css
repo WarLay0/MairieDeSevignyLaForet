@@ -522,9 +522,12 @@ main #searchbardiv #searchbar {
   padding: 1em;
   margin: 2em;
 }
+main #historyPage {
+  background-color: black;
+  width: 100%;
+}
 
 footer {
-  margin-top: 1em;
   background-color: black;
   padding: 5em;
   color: white;

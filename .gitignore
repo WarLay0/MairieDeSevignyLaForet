@@ -1,1 +1,4 @@
-TODO
+# Ajouter dans le git ignore le dossier admin
+/admin
+
+
