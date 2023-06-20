@@ -14,6 +14,7 @@
         <div id="searchDiv">
             <?php
                 require '../php/actuCode.php';
+                actu();
             ?>
         </div>
         
