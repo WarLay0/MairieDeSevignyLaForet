@@ -29,7 +29,7 @@
         }
         verifName(pageName());
         echo '<link rel="canonical" href="https://www.mairiesevignylaforet.fr'.pageName().'">';
-        echo '<script>headerBackground("'.pageName().'")</script>';
+        // echo '<script>headerBackground("'.pageName().'")</script>';
     ?>
 
 

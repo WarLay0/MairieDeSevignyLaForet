@@ -1,7 +1,6 @@
 <?php
     require 'cut/head.php';
     require 'cut/nav.php';
-    echo '<script>pageName("index");</script>';
 ?>
         <div id="HomeHeader">
             <h1>Mairie de</h1>
