@@ -10,7 +10,7 @@ if(empty($_POST)){
     $nom = $_POST['fname'];
     $email = $_POST['mail'];
     $message = $_POST['message'];
-    $mailAdmin = 'test-065r8k4us@srv1.mail-tester.com';
+    $mailAdmin = 'evan.bombart.pro@gmail.com';
 
     //Filtrer et nétoyer les données
     
@@ -47,7 +47,7 @@ if(empty($_POST)){
         //Code pour rcevoir le mail
         $messageMail = 'Nom : '.$nom.'\nPrénom : '.$prenom.'\nEmail : '.$email.'\nMessage : '.$message;
         $subject = $prenom.' '.$nom.' Site Internet - Mairie de Sévigny-La-Forêt';
-        mail($mailAdmin, $subject, $messageMail, 'From: '. 'site@evan-bombart.fr');
+        mail($mailAdmin, $subject, $messageMail, 'From: '. 'no-reply@mairiesevignylaforet.fr');
         header('Location: ../index.php#ContactFlex');        
     }else {
         header('Location: ../index.php#ContactFlex');
