@@ -4,7 +4,7 @@
 ?>
         <div id="HomeHeader">
             <h1>Mairie de</h1>
-            <img src="assets/img/header/Sign.png" alt="Panneau de la mairie de Sévigny-la-Forêt">
+            <img src="assets/img/header/Sign.webp" alt="Panneau de la mairie de Sévigny-la-Forêt">
         </div>
         <div id="HomeComingEvent">
             <h2>A venir :</h2>
@@ -16,7 +16,7 @@
             </article>
         </div>
         <div id="HomeComingSeparator">
-            <img src="assets/img/header/Separator.png" alt="Séparateur de section">
+            <img src="assets/img/header/Separator.webp" alt="Séparateur de section">
         </div>
         <div id="idPage" style="display: none">index</div>
     </header>
@@ -60,12 +60,12 @@
         <section id="HomeGallery" class="Home">
             <h2>Sévigny en photos</h2>
             <ul>
-                <li><img src="assets/img/HomeGallery/SLF_photo_1.jpg" alt="#"></li>
-                <li><img src="assets/img/HomeGallery/SLF_photo_2.jpg" alt="#"></li>
-                <li><img src="assets/img/HomeGallery/SLF_photo_3.jpg" alt="#"></li>
-                <li><img src="assets/img/HomeGallery/SLF_photo_4.jpg" alt="#"></li>
-                <li><img src="assets/img/HomeGallery/SLF_photo_5.jpg" alt="#"></li>
-                <li><img src="assets/img/HomeGallery/SLF_photo_6.jpg" alt="#"></li>
+                <li><img src="assets/img/HomeGallery/SLF_photo_1.webp" alt="#"></li>
+                <li><img src="assets/img/HomeGallery/SLF_photo_2.webp" alt="#"></li>
+                <li><img src="assets/img/HomeGallery/SLF_photo_3.webp" alt="#"></li>
+                <li><img src="assets/img/HomeGallery/SLF_photo_4.webp" alt="#"></li>
+                <li><img src="assets/img/HomeGallery/SLF_photo_5.webp" alt="#"></li>
+                <li><img src="assets/img/HomeGallery/SLF_photo_6.webp" alt="#"></li>
             </ul>
             <a href="pages/gallery.php" class="ButtonClassic">Voir plus</a>
         </section>

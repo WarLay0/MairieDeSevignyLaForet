@@ -1,13 +1,13 @@
 // Récupérer le vw de la page
 let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 if (vw <= 992) {
-    let index = [100, 'HeroImage.png']   
+    let index = [100, 'HeroImage.webp']   
 }else{
-    let index = [85, 'HeroImage.png']
+    let index = [85, 'HeroImage.webp']
 }
-let gallery = [50, 'GalleryImage.jpg']
-let agenda = [50, 'AgendaImage.jpg']
-let actu = [50, 'ActuImage.jpg']
+let gallery = [50, 'GalleryImage.webp']
+let agenda = [50, 'AgendaImage.webp']
+let actu = [50, 'ActuImage.webp']
 function pageName(nom){
     if (nom == 'index'){
         document.querySelector('header').style.height = index[0] + 'vh'
