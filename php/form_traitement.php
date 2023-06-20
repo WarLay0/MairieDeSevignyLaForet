@@ -5,6 +5,8 @@ session_start();
 if(empty($_POST)){
     echo 'Formulaire non envoyé';
 }else {
+    //Vider les données de la session
+    unset($_SESSION['errors']);
     //Récupération des données du formulaire
     $prenom = $_POST['name'];
     $nom = $_POST['fname'];
@@ -45,7 +47,7 @@ if(empty($_POST)){
     $_SESSION['errors'] = $errors;
     if(empty($_SESSION['errors'])){
         //Code pour rcevoir le mail
-        $messageMail = 'Nom : '.$nom.'\n Prénom : '.$prenom.'\n Email : '.$email.'\n Message : '.$message;
+        $messageMail = 'Nom : '.$nom.' \n Prénom : '.$prenom.' \n Email : '.$email.' \n Message : '.$message;
         $subject = $prenom.' '.$nom.' Site Internet - Mairie de Sévigny-La-Forêt';
         mail($mailAdmin, $subject, $messageMail, 'From: '. 'no-reply@mairiesevignylaforet.fr');
         header('Location: ../index.php#ContactFlex');        
