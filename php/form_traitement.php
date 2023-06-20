@@ -47,7 +47,12 @@ if(empty($_POST)){
     $_SESSION['errors'] = $errors;
     if(empty($_SESSION['errors'])){
         //Code pour rcevoir le mail
-        $messageMail = 'Nom : '.$nom.' \n Prénom : '.$prenom.' \n Email : '.$email.' \n Message : '.$message;
+        // $messageMail = 'Nom : '.$nom.' \n Prénom : '.$prenom.' \n Email : '.$email.' \n Message : '.$message;
+        //Envoyer un mail au format HTML
+        $messageMail = '<html><body>';
+        $messageMail .= '<h1>Message de '.$prenom.' '.$nom.'</h1>';
+        $messageMail .= '<p>'.$message.'</p>';
+        $messageMail .= '</body></html>';
         $subject = $prenom.' '.$nom.' Site Internet - Mairie de Sévigny-La-Forêt';
         mail($mailAdmin, $subject, $messageMail, 'From: '. 'no-reply@mairiesevignylaforet.fr');
         header('Location: ../index.php#ContactFlex');        
