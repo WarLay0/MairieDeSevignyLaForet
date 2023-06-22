@@ -19,7 +19,7 @@
             <h4>Réseaux</h4>
             <div class="footerSectionContent" id="footerSocial">
                 <a href="https://www.facebook.com/MairieSLF08/" target="_blank">
-                    <img src="/assets/img/footer/Facebook.png" alt="Logo facebook">
+                    <img src="/assets/img/footer/Facebook.webp" alt="Logo facebook">
                     <p>Commune de Sévigny-La-Forêt</p>
                 </a>
             </div>

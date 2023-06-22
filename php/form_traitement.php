@@ -12,7 +12,7 @@ if(empty($_POST)){
     $nom = $_POST['fname'];
     $email = $_POST['mail'];
     $message = $_POST['message'];
-    $mailAdmin = 'evan.bombart.pro@gmail.com';
+    $mailAdmin = 'mairie.sevigny-la-foret@wanadoo.fr';
 
     //Filtrer et nétoyer les données
     
