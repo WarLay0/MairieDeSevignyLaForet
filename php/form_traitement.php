@@ -55,9 +55,9 @@ if(empty($_POST)){
         $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 
         mail($mailAdmin, $subject, $messageMail, $headers);
-        header('Location: ../index.php#ContactFlex');
+        header('Location: ../index.php');
     } else {
-        header('Location: ../index.php#ContactFlex');
+        header('Location: ../index.php');
     }
 
  
