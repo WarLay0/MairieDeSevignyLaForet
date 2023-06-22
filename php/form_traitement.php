@@ -12,7 +12,7 @@ if(empty($_POST)){
     $nom = $_POST['fname'];
     $email = $_POST['mail'];
     $message = $_POST['message'];
-    $mailAdmin = 'mairie.sevigny-la-foret@wanadoo.fr';
+    $mailAdmin = 'evan.bombart.pro@gmail.com';
 
     //Filtrer et nétoyer les données
     
@@ -22,10 +22,10 @@ if(empty($_POST)){
     htmlspecialchars($message);
 
     //Valdation des données / Accepter les traits d'union et les espaces
-    $prenom = filter_var($prenom, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z- ]*$/")));
-    $nom = filter_var($nom, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z- ]*$/")));
+    $prenom = filter_var($prenom, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-ZÀ-ÿ -]*$/")));
+    $nom = filter_var($nom, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-ZÀ-ÿ -]*$/")));
     $email = filter_var($email, FILTER_VALIDATE_EMAIL);
-    $message = filter_var($message, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z- ]*$/")));
+    $message = filter_var($message, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-ZÀ-ÿ -]*$/")));
 
     //Créer un ableau d'erreu qui sera socké dans la session
     $errors = [];
